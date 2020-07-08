@@ -46,6 +46,8 @@
     
     <title>
         
+            算法(一) | 
+        
         YY&#39;s blog
     </title>
 
@@ -211,7 +213,7 @@
     <!-- WebAPP Icons -->
     <meta name="mobile-web-app-capable" content="yes">
     <meta name="application-name" content="YY&#39;s blog">
-    <meta name="msapplication-starturl" content="http://yoursite.com/">
+    <meta name="msapplication-starturl" content="http://yoursite.com/2020/07/08/%E7%AE%97%E6%B3%95-%E4%B8%80/">
     <meta name="msapplication-navbutton-color" content="#0097A7">
     <meta name="apple-mobile-web-app-capable" content="yes">
     <meta name="apple-mobile-web-app-title" content="YY&#39;s blog">
@@ -226,13 +228,16 @@
     
 
     <!-- The Open Graph protocol -->
-    <meta property="og:url" content="http://yoursite.com/">
+    <meta property="og:url" content="http://yoursite.com/2020/07/08/%E7%AE%97%E6%B3%95-%E4%B8%80/">
     <meta property="og:type" content="blog">
-    <meta property="og:title" content="YY&#39;s blog">
+    <meta property="og:title" content="算法(一) | YY&#39;s blog">
     <meta property="og:image" content="/img/favicon.png">
     <meta property="og:description" content="">
     
 
+    
+        <meta property="article:published_time" content="Wed Jul 08 2020 13:26:03 GMT+0800">
+        <meta property="article:modified_time" content="Wed Jul 08 2020 13:27:21 GMT+0800">
     
 
     <!-- The Twitter Card protocol -->
@@ -240,35 +245,43 @@
 
     <!-- Add canonical link for SEO -->
     
-        <link rel="canonical" href="http://yoursite.com" />
+        <link rel="canonical" href="http://yoursite.com/2020/07/08/%E7%AE%97%E6%B3%95-%E4%B8%80/index.html" />
     
 
     <!-- Structured-data for SEO -->
     
         
+
+
 <script type="application/ld+json">
 {
-    "@context": "http://schema.org",
-    "@type": "Website",
+    "@context": "https://schema.org",
+    "@type": "BlogPosting",
+    "mainEntityOfPage": "http://yoursite.com/2020/07/08/%E7%AE%97%E6%B3%95-%E4%B8%80/index.html",
+    "headline": "算法(一)",
+    "datePublished": "Wed Jul 08 2020 13:26:03 GMT+0800",
+    "dateModified": "Wed Jul 08 2020 13:27:21 GMT+0800",
+    "author": {
+        "@type": "Person",
+        "name": "yy",
+        "image": {
+            "@type": "ImageObject",
+            "url": "/img/avatar.png"
+        },
+        "description": "过把瘾就死"
+    },
     "publisher": {
         "@type": "Organization",
         "name": "YY&#39;s blog",
-        "logo": "/img/favicon.png"
+        "logo": {
+            "@type":"ImageObject",
+            "url": "/img/favicon.png"
+        }
     },
-    "url": "http://yoursite.com",
-    "image": {
-        "@type": "ImageObject",
-        "url": "/img/favicon.png"
-    },
-    "mainEntityOfPage": {
-        "@type": "WebPage",
-        "@id": "http://yoursite.com"
-    },
-    "description": ""
+    "keywords": "",
+    "description": "",
 }
 </script>
-
-
 
 
     
@@ -302,433 +315,265 @@
                         </button>
                     
 
-                    <!-- Index Module -->
-<div class="material-index mdl-grid">
+                    <!-- Post TOC -->
+
     
-        <!-- Paradox Header -->
-        <!-- Daily pic -->
-<div class="mdl-card mdl-shadow--2dp daily-pic mdl-cell mdl-cell--8-col index-top-block">
-
-    <!-- Pic & Slogan -->
-    <div class="mdl-card__media mdl-color-text--grey-50" style="background-image:url(/img/daily_pic.png)">
-        <p class="index-top-block-slogan"><a href="https://yu2yu.github.io/radio/" target="_blank" rel="noopener">
-        
-            
-                过把瘾就死
-            
-        
-        </a></p>
-    </div>
-
-    <!-- Avatar & Name -->
-    <div class="mdl-card__supporting-text meta mdl-color-text--grey-600">
-        <!-- Author Avatar -->
-        <div id="author-avatar">
-            <img src="/img/avatar.png" width="32px" height="32px" alt="avatar">
-        </div>
-        <div>
-            <strong>yy</strong>
-        </div>
-    </div>
-</div>
-
-        <!-- Blog info -->
-<div class="mdl-card mdl-shadow--2dp something-else mdl-cell mdl-cell--8-col mdl-cell--4-col-desktop index-top-block">
-
-    <!-- Search -->
-    
-    <!-- Google -->
-    <div class="mdl-textfield mdl-js-textfield mdl-textfield--expandable" method="post" action="">
-        <label id="search-label" class="mdl-button mdl-js-ripple-effect mdl-js-button mdl-button--fab mdl-color--accent mdl-shadow--4dp" for="search">
-            <i class="material-icons mdl-color-text--white" role="presentation">search</i>
-        </label>
-
-        <form autocomplete="off" id="search-form" method="get" action="//google.com/search" accept-charset="UTF-8" class="mdl-textfield__expandable-holder" target="_blank">
-            <input class="mdl-textfield__input search-input" type="search" name="q" id="search" placeholder="">
-            <label id="search-form-label" class="mdl-textfield__label" for="search"></label>
-
-            <input type="hidden" name="sitesearch" value="http://yoursite.com">
-        </form>
-    </div>
-
-
-
-
-
-
-
-    <!-- LOGO -->
-    <div class="something-else-logo mdl-color--white mdl-color-text--grey-600">
-        <a href="https://yu2yu.github.io/photo/" target="_blank">
-            <img src="/img/logo.png" alt="logo" />
+    <!-- Back Button -->
+    <!--
+    <div class="material-back" id="backhome-div" tabindex="0">
+        <a class="mdl-button mdl-js-button mdl-js-ripple-effect mdl-button--icon"
+           href="#" onclick="window.history.back();return false;"
+           target="_self"
+           role="button"
+           data-upgraded=",MaterialButton,MaterialRipple">
+            <i class="material-icons" role="presentation">arrow_back</i>
+            <span class="mdl-button__ripple-container">
+                <span class="mdl-ripple"></span>
+            </span>
         </a>
     </div>
+    -->
 
-    <!-- Infomation -->
-    <div class="mdl-card__supporting-text meta meta--fill mdl-color-text--grey-600">
-        <!-- Blog Title -->
-        <div>
-            <strong>YY&#39;s blog</strong>
-        </div>
-        <div class="section-spacer"></div>
 
-        <!-- Pages -->
-        <button id="show-pages-button" class="mdl-button mdl-js-button mdl-js-ripple-effect mdl-button--icon">
-            <i class="material-icons" role="presentation">view_carousel</i>
-            <span class="visuallyhidden">Pages</span>
-        </button>
-        <ul class="mdl-menu mdl-js-menu mdl-menu--bottom-right" for="show-pages-button">
-            
-        </ul>
-
-        <!-- Menu -->
-        <button id="menubtn" class="mdl-button mdl-js-button mdl-js-ripple-effect mdl-button--icon">
-            <i class="material-icons" role="presentation">more_vert</i>
-            <span class="visuallyhidden">show menu</span>
-        </button>
-        <ul class="mdl-menu mdl-js-menu mdl-menu--bottom-right" for="menubtn">
-            
-
-            
-
-            
-                <a class="index_share-link" href="http://service.weibo.com/share/share.php?appkey=&title=YY&#39;s blog&url=http://yoursite.com&pic=http://yoursite.com/img/favicon.png&searchPic=false&style=simple" target="_blank">
-                    <li class="mdl-menu__item mdl-js-ripple-effect">
-                        分享到微博
-                    </li>
-                </a>
-            
-
-            
-                <a class="index_share-link" href="https://twitter.com/intent/tweet?text=YY&#39;s blog&url=http://yoursite.com&via=yy" target="_blank">
-                    <li class="mdl-menu__item mdl-js-ripple-effect">
-                        分享到 Twitter
-                    </li>
-                </a>
-            
-
-            
-                <a class="index_share-link" href="https://www.facebook.com/sharer/sharer.php?u=http://yoursite.com" target="_blank">
-                    <li class="mdl-menu__item mdl-js-ripple-effect">
-                        分享到 Facebook
-                    </li>
-                </a>
-            
-
-            
-
-            
-
-            
-
-            
-        </ul>
-    </div>
-</div>
-
+    <!-- Left aligned menu below button -->
     
-    <div class="locate-thumbnail-symbol"></div>
+    
+    <button id="post-toc-trigger-btn"
+        class="mdl-button mdl-js-button mdl-button--icon">
+        <i class="material-icons">format_list_numbered</i>
+    </button>
 
-    <!-- Pin on top -->
+    <ul class="post-toc-wrap mdl-menu mdl-menu--bottom-left mdl-js-menu mdl-js-ripple-effect" for="post-toc-trigger-btn" style="max-height:80vh; overflow-y:scroll;">
+        <ol class="post-toc"><li class="post-toc-item post-toc-level-4"><a class="post-toc-link" href="#数据结构"><span class="post-toc-number">1.</span> <span class="post-toc-text">数据结构</span></a></li><li class="post-toc-item post-toc-level-4"><a class="post-toc-link" href="#算法"><span class="post-toc-number">2.</span> <span class="post-toc-text">算法</span></a></li><li class="post-toc-item post-toc-level-4"><a class="post-toc-link" href="#附录"><span class="post-toc-number">3.</span> <span class="post-toc-text">附录</span></a><ol class="post-toc-child"><li class="post-toc-item post-toc-level-5"><a class="post-toc-link" href="#数据结构种类"><span class="post-toc-number">3.1.</span> <span class="post-toc-text">数据结构种类</span></a><ol class="post-toc-child"><li class="post-toc-item post-toc-level-6"><a class="post-toc-link" href="#二叉树"><span class="post-toc-number">3.1.1.</span> <span class="post-toc-text">二叉树</span></a></li></ol></li></ol></li></ol>
+    </ul>
     
 
-    <!-- Normal Post -->
-    
-        
-            
-                <!-- Paradox Thumbnail -->
-                <div class="post_entry-module mdl-card mdl-shadow--2dp mdl-cell mdl-cell--12-col fade out">
-    <!-- Post Thumbnail -->
+
+
+
+<!-- Layouts -->
+
+    <!-- Post Module -->
+    <div class="material-post_container">
+
+        <div class="material-post mdl-grid">
+            <div class="mdl-card mdl-shadow--4dp mdl-cell mdl-cell--12-col">
+
+                <!-- Post Header(Thumbnail & Title) -->
+                
+    <!-- Paradox Post Header -->
     
         
             <!-- Random Thumbnail -->
             <div class="post_thumbnail-random mdl-card__media mdl-color-text--grey-50">
-        
-    
+            <script type="text/ls-javascript" id="post-thumbnail-script">
+    var randomNum = Math.floor(Math.random() * 19 + 1);
 
-        <!-- Post Title -->
-        <p class="article-headline-p"><a href="/2020/07/08/%E7%AE%97%E6%B3%95-%E4%B8%80/">算法(一)</a></p>
-    </div>
-
-    <!-- Post Excerpt -->
-    <div class="mdl-color-text--grey-600 mdl-card__supporting-text post_entry-content">
-        
-            数据结构
-        
-        &nbsp;&nbsp;&nbsp;
-        <span>
-            <a href="/2020/07/08/%E7%AE%97%E6%B3%95-%E4%B8%80/" target="_self">阅读全文</a>
-        </span>
-    </div>
-    <!-- Post_entry Info-->
-    <div id="post_entry-info">
-        <div id="post_entry-left-info" class="mdl-card__supporting-text meta mdl-color-text--grey-600 ">
-            <!-- Author Avatar -->
-            <div id="author-avatar">
-                <img src="/img/avatar.png" width="44px" height="44px" alt="yy's avatar">
-            </div>
-            <div>
-                <strong>yy</strong>
-                <span>7月 08, 2020</span>
-            </div>
-        </div>
-        <div id="post_entry-right-info">
-          
-
-            
-
-            
-
-            <!-- Post Views -->
-            <span class="post_entry-views">
-            </span>
-        </div>
-    </div>
-</div>
-
-            
-            
-        
-    
-        
-            
-                <!-- Paradox Thumbnail -->
-                <div class="post_entry-module mdl-card mdl-shadow--2dp mdl-cell mdl-cell--12-col fade out">
-    <!-- Post Thumbnail -->
-    
-        
-            <!-- Random Thumbnail -->
-            <div class="post_thumbnail-random mdl-card__media mdl-color-text--grey-50">
-        
-    
-
-        <!-- Post Title -->
-        <p class="article-headline-p"><a href="/2020/07/02/%E9%97%AE%E9%A2%98/">问题</a></p>
-    </div>
-
-    <!-- Post Excerpt -->
-    <div class="mdl-color-text--grey-600 mdl-card__supporting-text post_entry-content">
-        
-            
-        
-        &nbsp;&nbsp;&nbsp;
-        <span>
-            <a href="/2020/07/02/%E9%97%AE%E9%A2%98/" target="_self">阅读全文</a>
-        </span>
-    </div>
-    <!-- Post_entry Info-->
-    <div id="post_entry-info">
-        <div id="post_entry-left-info" class="mdl-card__supporting-text meta mdl-color-text--grey-600 ">
-            <!-- Author Avatar -->
-            <div id="author-avatar">
-                <img src="/img/avatar.png" width="44px" height="44px" alt="yy's avatar">
-            </div>
-            <div>
-                <strong>yy</strong>
-                <span>7月 02, 2020</span>
-            </div>
-        </div>
-        <div id="post_entry-right-info">
-          
-
-            
-
-            
-
-            <!-- Post Views -->
-            <span class="post_entry-views">
-            </span>
-        </div>
-    </div>
-</div>
-
-            
-            
-        
-    
-        
-            
-                <!-- Paradox Thumbnail -->
-                <div class="post_entry-module mdl-card mdl-shadow--2dp mdl-cell mdl-cell--12-col fade out">
-    <!-- Post Thumbnail -->
-    
-        <!-- Custom Thumbnail -->
-        <div class="post_thumbnail-custom mdl-card__media mdl-color-text--grey-50 lazy" data-original="../img/Spring-Batch.png">
-    
-
-        <!-- Post Title -->
-        <p class="article-headline-p"><a href="/2020/07/01/%E6%89%B9%E5%A4%84%E7%90%86/">批处理</a></p>
-    </div>
-
-    <!-- Post Excerpt -->
-    <div class="mdl-color-text--grey-600 mdl-card__supporting-text post_entry-content">
-        
-            批处理
-        
-        &nbsp;&nbsp;&nbsp;
-        <span>
-            <a href="/2020/07/01/%E6%89%B9%E5%A4%84%E7%90%86/" target="_self">阅读全文</a>
-        </span>
-    </div>
-    <!-- Post_entry Info-->
-    <div id="post_entry-info">
-        <div id="post_entry-left-info" class="mdl-card__supporting-text meta mdl-color-text--grey-600 ">
-            <!-- Author Avatar -->
-            <div id="author-avatar">
-                <img src="/img/avatar.png" width="44px" height="44px" alt="yy's avatar">
-            </div>
-            <div>
-                <strong>yy</strong>
-                <span>7月 01, 2020</span>
-            </div>
-        </div>
-        <div id="post_entry-right-info">
-          
-
-            
-
-            
-
-            <!-- Post Views -->
-            <span class="post_entry-views">
-            </span>
-        </div>
-    </div>
-</div>
-
-            
-            
-        
-    
-        
-            
-                <!-- Paradox Thumbnail -->
-                <div class="post_entry-module mdl-card mdl-shadow--2dp mdl-cell mdl-cell--12-col fade out">
-    <!-- Post Thumbnail -->
-    
-        <!-- Custom Thumbnail -->
-        <div class="post_thumbnail-custom mdl-card__media mdl-color-text--grey-50 lazy" data-original="../img/cleanCode.jpg">
-    
-
-        <!-- Post Title -->
-        <p class="article-headline-p"><a href="/2020/07/01/clean-code/">clean code</a></p>
-    </div>
-
-    <!-- Post Excerpt -->
-    <div class="mdl-color-text--grey-600 mdl-card__supporting-text post_entry-content">
-        
-            代码优化
-        
-        &nbsp;&nbsp;&nbsp;
-        <span>
-            <a href="/2020/07/01/clean-code/" target="_self">阅读全文</a>
-        </span>
-    </div>
-    <!-- Post_entry Info-->
-    <div id="post_entry-info">
-        <div id="post_entry-left-info" class="mdl-card__supporting-text meta mdl-color-text--grey-600 ">
-            <!-- Author Avatar -->
-            <div id="author-avatar">
-                <img src="/img/avatar.png" width="44px" height="44px" alt="yy's avatar">
-            </div>
-            <div>
-                <strong>yy</strong>
-                <span>7月 01, 2020</span>
-            </div>
-        </div>
-        <div id="post_entry-right-info">
-          
-
-            
-
-            
-
-            <!-- Post Views -->
-            <span class="post_entry-views">
-            </span>
-        </div>
-    </div>
-</div>
-
-            
-            
-        
-    
-        
-            
-                <!-- Paradox Thumbnail -->
-                <div class="post_entry-module mdl-card mdl-shadow--2dp mdl-cell mdl-cell--12-col fade out">
-    <!-- Post Thumbnail -->
-    
-        <!-- Custom Thumbnail -->
-        <div class="post_thumbnail-custom mdl-card__media mdl-color-text--grey-50 lazy" data-original="../img/hello-world.png">
-    
-
-        <!-- Post Title -->
-        <p class="article-headline-p"><a href="/2020/07/01/hello-world/">Hello World</a></p>
-    </div>
-
-    <!-- Post Excerpt -->
-    <div class="mdl-color-text--grey-600 mdl-card__supporting-text post_entry-content">
-        
-            Welcome to Hexo
-        
-        &nbsp;&nbsp;&nbsp;
-        <span>
-            <a href="/2020/07/01/hello-world/" target="_self">阅读全文</a>
-        </span>
-    </div>
-    <!-- Post_entry Info-->
-    <div id="post_entry-info">
-        <div id="post_entry-left-info" class="mdl-card__supporting-text meta mdl-color-text--grey-600 ">
-            <!-- Author Avatar -->
-            <div id="author-avatar">
-                <img src="/img/avatar.png" width="44px" height="44px" alt="yy's avatar">
-            </div>
-            <div>
-                <strong>yy</strong>
-                <span>7月 01, 2020</span>
-            </div>
-        </div>
-        <div id="post_entry-right-info">
-          
-
-            
-
-            
-
-            <!-- Post Views -->
-            <span class="post_entry-views">
-            </span>
-        </div>
-    </div>
-</div>
-
-            
-            
-        
-    
-
-    
-
-    
-        <script type="text/ls-javascript" id="thumbnail-script">
-    var randomNum;
-
-    var locatePost = $('.locate-thumbnail-symbol').next();
-    for(var i = 0; i < 10; i++) {
-        randomNum = Math.floor(Math.random() * 19 + 1);
-
-        locatePost.children('.post_thumbnail-random').attr('id', 'random_thumbnail-'+randomNum);
-        locatePost.children('.post_thumbnail-random').attr('data-original', '/img/random/material-' + randomNum + '.png');
+    $('.post_thumbnail-random').attr('data-original', '/img/random/material-' + randomNum + '.png');
     $('.post_thumbnail-random').addClass('lazy');
-
-        locatePost = locatePost.next();
-    }
 </script>
 
+        
+    
+            <p class="article-headline-p">
+                算法(一)
+            </p>
+        </div>
+
+
+
+
+
+                
+                    <!-- Paradox Post Info -->
+                    <div class="mdl-color-text--grey-700 mdl-card__supporting-text meta">
+
+    <!-- Author Avatar -->
+    <div id="author-avatar">
+        <img src="/img/avatar.png" width="44px" height="44px" alt="Author Avatar"/>
+    </div>
+    <!-- Author Name & Date -->
+    <div>
+        <strong>yy</strong>
+        <span>7月 08, 2020</span>
+    </div>
+
+    <div class="section-spacer"></div>
+
+    <!-- Favorite -->
+    <!--
+        <button id="article-functions-like-button" class="mdl-button mdl-js-button mdl-js-ripple-effect mdl-button--icon btn-like">
+            <i class="material-icons" role="presentation">favorite</i>
+            <span class="visuallyhidden">favorites</span>
+        </button>
+    -->
+
+    <!-- Qrcode -->
+    
+
+    <!-- Tags (bookmark) -->
+    
+
+    <!-- Share -->
+    
+        <button id="article-fuctions-share-button" class="mdl-button mdl-js-button mdl-js-ripple-effect mdl-button--icon">
+    <i class="material-icons" role="presentation">share</i>
+    <span class="visuallyhidden">share</span>
+</button>
+<ul class="mdl-menu mdl-menu--bottom-right mdl-js-menu mdl-js-ripple-effect" for="article-fuctions-share-button">
+    
+
+    
+
+    <!-- Share Weibo -->
+    
+        <a class="post_share-link" href="http://service.weibo.com/share/share.php?appkey=&title=算法(一)&url=http://yoursite.com/2020/07/08/%E7%AE%97%E6%B3%95-%E4%B8%80/index.html&pic=http://yoursite.com/img/favicon.png&searchPic=false&style=simple" target="_blank">
+            <li class="mdl-menu__item">
+                分享到微博
+            </li>
+        </a>
+    
+
+    <!-- Share Twitter -->
+    
+        <a class="post_share-link" href="https://twitter.com/intent/tweet?text=算法(一)&url=http://yoursite.com/2020/07/08/%E7%AE%97%E6%B3%95-%E4%B8%80/index.html&via=yy" target="_blank">
+            <li class="mdl-menu__item">
+                分享到 Twitter
+            </li>
+        </a>
+    
+
+    <!-- Share Facebook -->
+    
+        <a class="post_share-link" href="https://www.facebook.com/sharer/sharer.php?u=http://yoursite.com/2020/07/08/%E7%AE%97%E6%B3%95-%E4%B8%80/index.html" target="_blank">
+            <li class="mdl-menu__item">
+                分享到 Facebook
+            </li>
+        </a>
+    
+
+    <!-- Share Google+ -->
+    
+
+    <!-- Share LinkedIn -->
+    
+
+    <!-- Share QQ -->
+    
+
+    <!-- Share Telegram -->
+    
+</ul>
+
     
 </div>
+
+                
+
+                <!-- Post Content -->
+                <div id="post-content" class="mdl-color-text--grey-700 mdl-card__supporting-text fade out">
+    
+        <h4 id="数据结构"><a href="#数据结构" class="headerlink" title="数据结构"></a>数据结构</h4><blockquote>
+<p> 数据结构的存储方式只有两种：<strong>数组存储和链表存储</strong> </p>
+</blockquote>
+<p> <strong>数组</strong>由于是紧凑连续存储,可以随机访问，通过索引快速找到对应元素，而且相对节约存储空间。但正因为连续存储，内存空间必须一次性分配够，所以说数组如果要扩容，需要重新分配一块更大的空间，再把数据全部复制过去，时间复杂度 O(N)；而且你如果想在数组中间进行插入和删除，每次必须搬移后面的所有数据以保持连续，时间复杂度 O(N)。 </p>
+<p> <strong>链表</strong>因为元素不连续，而是靠指针指向下一个元素的位置，所以不存在数组的扩容问题；如果知道某一元素的前驱和后驱，操作指针即可删除该元素或者插入新元素，时间复杂度 O(1)。但是正因为存储空间不连续，你无法根据一个索引算出对应元素的地址，所以不能随机访问；而且由于每个元素必须存储指向前后元素位置的指针，会消耗相对更多的储存空间。 </p>
+<blockquote>
+<p>数据结构种类很多，但它们存在的目的都是在不同的应用场景，尽可能<strong>高效地增删查改</strong></p>
+</blockquote>
+<p><strong>如何遍历 + 访问？</strong></p>
+<pre><code class="java">// 数组
+for(int i=0;i&lt;arr.length;i++){
+    // 迭代访问
+}
+
+// 链表
+void traverse(ListNode head) {
+    for (ListNode p = head; p != null; p = p.next) {
+        // 迭代访问 p.val
+    }
+}
+void traverse(ListNode head) {
+    // 递归访问 head.val
+    traverse(head.next)
+}
+
+// 二叉树
+void traverse(TreeNode root) {
+    traverse(root.left)
+    traverse(root.right
+}
+
+// n叉树
+/* 基本的 N 叉树节点 */
+class TreeNode {
+    int val;
+    TreeNode[] children;
+}
+void traverse(TreeNode root) {
+    for (TreeNode child : root.children)
+        traverse(child);
+}             </code></pre>
+<h4 id="算法"><a href="#算法" class="headerlink" title="算法"></a>算法</h4><blockquote>
+<p> <strong>数据结构是工具，算法是通过合适的工具解决特定问题的方法</strong>。 </p>
+</blockquote>
+<h4 id="附录"><a href="#附录" class="headerlink" title="附录"></a>附录</h4><h5 id="数据结构种类"><a href="#数据结构种类" class="headerlink" title="数据结构种类"></a>数据结构种类</h5><p> <strong><em>散列表、栈、队列、堆、树、图等等各种数据结构</em></strong></p>
+<h6 id="二叉树"><a href="#二叉树" class="headerlink" title="二叉树"></a>二叉树</h6><p><strong>基本概念</strong></p>
+<p><img src="../img/tree-desc.jpg" alt="tree-desc"></p>
+<p><strong>数据结构</strong></p>
+<pre><code class="java">public class TreeNode {
+    // 左节点(儿子)
+    private TreeNode lefTreeNode; 
+    // 右节点(儿子)
+    private TreeNode rightNode;
+    // 数据
+    private int value;
+}</code></pre>
+<p><strong>遍历方式</strong></p>
+<ul>
+<li><strong>先序遍历</strong> 先访问根节点，然后访问左节点，最后访问右节点 （根 —&gt; 左 —&gt; 右）</li>
+<li><strong>中序节点</strong> 先访问左节点，然后访问根节点，最后访问右节点 （左 —&gt; 根 —&gt; 右）</li>
+<li><strong>后序遍历</strong> 先访问左节点 ,  然后访问右节点，最后访问根节点  （左 —&gt; 右 —&gt; 根）</li>
+</ul>
+
+        
+    
+
+    
+</div>
+
+
+                
+
+                <!-- Post Comments -->
+                
+                    
+                
+            </div>
+
+            <!-- Post Prev & Next Nav -->
+            <nav class="material-nav mdl-color-text--grey-50 mdl-cell mdl-cell--12-col">
+    <!-- Prev Nav -->
+    
+
+    <!-- Section Spacer -->
+    <div class="section-spacer"></div>
+
+    <!-- Next Nav -->
+    
+        <a href="/2020/07/02/%E9%97%AE%E9%A2%98/" id="post_nav-older" class="next-content">
+            旧篇
+            &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+            <button class="mdl-button mdl-js-button mdl-js-ripple-effect mdl-button--icon mdl-color--white mdl-color-text--grey-900" role="presentation">
+                <i class="material-icons">arrow_forward</i>
+            </button>
+        </a>
+    
+</nav>
+
+        </div>
+    </div>
+
 
 
                     
@@ -1019,12 +864,6 @@ It will not impact the appearance and can give developers a lot of support :)
 
 
 
-
-    <!-- Swiftye -->
-    
-
-    <!-- Local Search-->
-    
 
 
 <!-- UC Browser Compatible -->
