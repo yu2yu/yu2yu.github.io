@@ -237,7 +237,7 @@
 
     
         <meta property="article:published_time" content="Wed Jul 01 2020 15:45:58 GMT+0800">
-        <meta property="article:modified_time" content="Wed Jul 01 2020 16:10:15 GMT+0800">
+        <meta property="article:modified_time" content="Tue Jul 14 2020 13:32:15 GMT+0800">
     
 
     <!-- The Twitter Card protocol -->
@@ -260,7 +260,7 @@
     "mainEntityOfPage": "http://yoursite.com/2020/07/01/clean-code/index.html",
     "headline": "clean code",
     "datePublished": "Wed Jul 01 2020 15:45:58 GMT+0800",
-    "dateModified": "Wed Jul 01 2020 16:10:15 GMT+0800",
+    "dateModified": "Tue Jul 14 2020 13:32:15 GMT+0800",
     "author": {
         "@type": "Person",
         "name": "yy",
@@ -344,7 +344,7 @@
     </button>
 
     <ul class="post-toc-wrap mdl-menu mdl-menu--bottom-left mdl-js-menu mdl-js-ripple-effect" for="post-toc-trigger-btn" style="max-height:80vh; overflow-y:scroll;">
-        <ol class="post-toc"><li class="post-toc-item post-toc-level-3"><a class="post-toc-link" href="#代码优化"><span class="post-toc-number">1.</span> <span class="post-toc-text">代码优化</span></a><ol class="post-toc-child"><li class="post-toc-item post-toc-level-4"><a class="post-toc-link" href="#clean-code"><span class="post-toc-number">1.1.</span> <span class="post-toc-text">clean code</span></a><ol class="post-toc-child"><li class="post-toc-item post-toc-level-5"><a class="post-toc-link" href="#命名规范"><span class="post-toc-number">1.1.1.</span> <span class="post-toc-text">命名规范</span></a></li><li class="post-toc-item post-toc-level-5"><a class="post-toc-link" href="#函数"><span class="post-toc-number">1.1.2.</span> <span class="post-toc-text">函数</span></a></li><li class="post-toc-item post-toc-level-5"><a class="post-toc-link" href="#注释"><span class="post-toc-number">1.1.3.</span> <span class="post-toc-text">注释</span></a></li><li class="post-toc-item post-toc-level-5"><a class="post-toc-link" href="#格式"><span class="post-toc-number">1.1.4.</span> <span class="post-toc-text">格式</span></a></li></ol></li><li class="post-toc-item post-toc-level-4"><a class="post-toc-link" href="#优化总结"><span class="post-toc-number">1.2.</span> <span class="post-toc-text">优化总结</span></a></li><li class="post-toc-item post-toc-level-4"><a class="post-toc-link" href="#系统代码优化"><span class="post-toc-number">1.3.</span> <span class="post-toc-text">系统代码优化</span></a><ol class="post-toc-child"><li class="post-toc-item post-toc-level-5"><a class="post-toc-link" href="#if…else和switch"><span class="post-toc-number">1.3.1.</span> <span class="post-toc-text">if…else和switch</span></a></li></ol></li></ol></li></ol>
+        <ol class="post-toc"><li class="post-toc-item post-toc-level-3"><a class="post-toc-link" href="#代码优化"><span class="post-toc-number">1.</span> <span class="post-toc-text">代码优化</span></a><ol class="post-toc-child"><li class="post-toc-item post-toc-level-4"><a class="post-toc-link" href="#clean-code"><span class="post-toc-number">1.1.</span> <span class="post-toc-text">clean code</span></a><ol class="post-toc-child"><li class="post-toc-item post-toc-level-5"><a class="post-toc-link" href="#命名规范"><span class="post-toc-number">1.1.1.</span> <span class="post-toc-text">命名规范</span></a></li><li class="post-toc-item post-toc-level-5"><a class="post-toc-link" href="#函数"><span class="post-toc-number">1.1.2.</span> <span class="post-toc-text">函数</span></a></li><li class="post-toc-item post-toc-level-5"><a class="post-toc-link" href="#注释"><span class="post-toc-number">1.1.3.</span> <span class="post-toc-text">注释</span></a></li><li class="post-toc-item post-toc-level-5"><a class="post-toc-link" href="#格式"><span class="post-toc-number">1.1.4.</span> <span class="post-toc-text">格式</span></a></li></ol></li><li class="post-toc-item post-toc-level-4"><a class="post-toc-link" href="#优化总结"><span class="post-toc-number">1.2.</span> <span class="post-toc-text">优化总结</span></a></li><li class="post-toc-item post-toc-level-4"><a class="post-toc-link" href="#系统代码优化"><span class="post-toc-number">1.3.</span> <span class="post-toc-text">系统代码优化</span></a><ol class="post-toc-child"><li class="post-toc-item post-toc-level-5"><a class="post-toc-link" href="#if…else和switch"><span class="post-toc-number">1.3.1.</span> <span class="post-toc-text">if…else和switch</span></a></li><li class="post-toc-item post-toc-level-5"><a class="post-toc-link" href="#if…else和工厂模式"><span class="post-toc-number">1.3.2.</span> <span class="post-toc-text">if…else和工厂模式</span></a></li></ol></li></ol></li></ol>
     </ul>
     
 
@@ -579,6 +579,24 @@ for(char cRole:roles){
             log(&quot;role为：&quot; + cRole);
     }
 }</code></pre>
+<h5 id="if…else和工厂模式"><a href="#if…else和工厂模式" class="headerlink" title="if…else和工厂模式"></a>if…else和工厂模式</h5><p><strong>业务逻辑</strong> 近期接了需求移动端签名的后台数据逻辑，方法中采用了大量的if…else来区分每个保全类型的不同签名信息。后期维护和扩展非常困难由于每一个保全类型都具有多个签名，因此采用</p>
+<p>但是大致工厂根据保全类型分为类为抽象工厂</p>
+<p>保全类型为具体的产品</p>
+<ul>
+<li>申请人签名和代办人签名</li>
+<li>投保人签名和被投保人签名</li>
+</ul>
+<p>具体代码为：</p>
+<p><img src="/img/sign.png" alt="sign"></p>
+<blockquote>
+<p>可以看到该<code>ifelse</code>中代码量是300行左右，里面逻辑我就不具体展开了，后期维护以及阅读性差</p>
+</blockquote>
+<p>于是按照上述逻辑分析生成工厂类为：</p>
+<p><img src="/img/SignFactory.png" alt="SignFactory"></p>
+<p>工厂具体的产品为：</p>
+<p><img src="/img/SignPeople.png" alt="SignPeople"></p>
+<p>这里没有全部列出来</p>
+<p><strong><em>总结</em></strong>：由于不想生成更多的类，并且出于维护和阅读性来说，并没有使用不同工厂来代理不同的产品也就是比如DaiBanFactory、InsureFactory然后再DKSignFactory进行组合模式来管理，而是使用统一的SignFactory来管理，在方法中进行组合套装。</p>
 
         
     
@@ -705,7 +723,7 @@ for(char cRole:roles){
             </a>
             <ul class="dropdown-menu">
             <li>
-                <a class="sidebar_archives-link" href="/archives/2020/07/">七月 2020<span class="sidebar_archives-count">5</span></a>
+                <a class="sidebar_archives-link" href="/archives/2020/07/">七月 2020<span class="sidebar_archives-count">6</span></a>
             </ul>
         </li>
         
