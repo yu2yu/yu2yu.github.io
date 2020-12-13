@@ -46,7 +46,7 @@
     
     <title>
         
-            标签: algorithm | 
+            JUC(一) | 
         
         YY&#39;s blog
     </title>
@@ -57,7 +57,7 @@
 
     <meta name="format-detection" content="telephone=no"/>
     <meta name="description" itemprop="description" content="">
-    <meta name="keywords" content="">
+    <meta name="keywords" content=",java">
     <meta name="theme-color" content="#0097A7">
 
     <!-- Disable Fucking Bloody Baidu Tranformation -->
@@ -213,7 +213,7 @@
     <!-- WebAPP Icons -->
     <meta name="mobile-web-app-capable" content="yes">
     <meta name="application-name" content="YY&#39;s blog">
-    <meta name="msapplication-starturl" content="http://yoursite.com/tags/algorithm/">
+    <meta name="msapplication-starturl" content="http://yoursite.com/2020/12/13/JUC-%E4%B8%80/">
     <meta name="msapplication-navbutton-color" content="#0097A7">
     <meta name="apple-mobile-web-app-capable" content="yes">
     <meta name="apple-mobile-web-app-title" content="YY&#39;s blog">
@@ -228,13 +228,16 @@
     
 
     <!-- The Open Graph protocol -->
-    <meta property="og:url" content="http://yoursite.com/tags/algorithm/">
+    <meta property="og:url" content="http://yoursite.com/2020/12/13/JUC-%E4%B8%80/">
     <meta property="og:type" content="blog">
-    <meta property="og:title" content="标签: algorithm | YY&#39;s blog">
+    <meta property="og:title" content="JUC(一) | YY&#39;s blog">
     <meta property="og:image" content="/img/favicon.png">
     <meta property="og:description" content="">
-    
+    <meta property="og:article:tag" content="java"> 
 
+    
+        <meta property="article:published_time" content="Sun Dec 13 2020 14:35:27 GMT+0800">
+        <meta property="article:modified_time" content="Sun Dec 13 2020 14:45:41 GMT+0800">
     
 
     <!-- The Twitter Card protocol -->
@@ -242,13 +245,43 @@
 
     <!-- Add canonical link for SEO -->
     
-        <link rel="canonical" href="http://yoursite.com/tags/algorithm/index.html" />
+        <link rel="canonical" href="http://yoursite.com/2020/12/13/JUC-%E4%B8%80/index.html" />
     
 
     <!-- Structured-data for SEO -->
     
         
 
+
+<script type="application/ld+json">
+{
+    "@context": "https://schema.org",
+    "@type": "BlogPosting",
+    "mainEntityOfPage": "http://yoursite.com/2020/12/13/JUC-%E4%B8%80/index.html",
+    "headline": "JUC(一)",
+    "datePublished": "Sun Dec 13 2020 14:35:27 GMT+0800",
+    "dateModified": "Sun Dec 13 2020 14:45:41 GMT+0800",
+    "author": {
+        "@type": "Person",
+        "name": "yy",
+        "image": {
+            "@type": "ImageObject",
+            "url": "/img/avatar.png"
+        },
+        "description": "笑笑笑起来了"
+    },
+    "publisher": {
+        "@type": "Organization",
+        "name": "YY&#39;s blog",
+        "logo": {
+            "@type":"ImageObject",
+            "url": "/img/favicon.png"
+        }
+    },
+    "keywords": ",java",
+    "description": "",
+}
+</script>
 
 
     
@@ -282,91 +315,392 @@
                         </button>
                     
 
-                    <!-- Index Module -->
-<div class="material-index mdl-grid">
+                    <!-- Post TOC -->
+
     
-    <div class="locate-thumbnail-symbol"></div>
-
-    <!-- Pin on top -->
-    
-
-    <!-- Normal Post -->
-    
-        
-            
-                <!-- Paradox Thumbnail -->
-                <div class="post_entry-module mdl-card mdl-shadow--2dp mdl-cell mdl-cell--12-col fade out">
-    <!-- Post Thumbnail -->
-    
-        <!-- Custom Thumbnail -->
-        <div class="post_thumbnail-custom mdl-card__media mdl-color-text--grey-50 lazy" data-original="../img/algorithm.jpg">
-    
-
-        <!-- Post Title -->
-        <p class="article-headline-p"><a href="/2020/07/08/%E7%AE%97%E6%B3%95-%E4%B8%80/">算法(一)</a></p>
-    </div>
-
-    <!-- Post Excerpt -->
-    <div class="mdl-color-text--grey-600 mdl-card__supporting-text post_entry-content">
-        
-            数据结构
-        
-        &nbsp;&nbsp;&nbsp;
-        <span>
-            <a href="/2020/07/08/%E7%AE%97%E6%B3%95-%E4%B8%80/" target="_self">阅读全文</a>
-        </span>
-    </div>
-    <!-- Post_entry Info-->
-    <div id="post_entry-info">
-        <div id="post_entry-left-info" class="mdl-card__supporting-text meta mdl-color-text--grey-600 ">
-            <!-- Author Avatar -->
-            <div id="author-avatar">
-                <img src="/img/avatar.png" width="44px" height="44px" alt="yy's avatar">
-            </div>
-            <div>
-                <strong>yy</strong>
-                <span>7月 08, 2020</span>
-            </div>
-        </div>
-        <div id="post_entry-right-info">
-          
-
-            
-
-            
-
-            <!-- Post Views -->
-            <span class="post_entry-views">
+    <!-- Back Button -->
+    <!--
+    <div class="material-back" id="backhome-div" tabindex="0">
+        <a class="mdl-button mdl-js-button mdl-js-ripple-effect mdl-button--icon"
+           href="#" onclick="window.history.back();return false;"
+           target="_self"
+           role="button"
+           data-upgraded=",MaterialButton,MaterialRipple">
+            <i class="material-icons" role="presentation">arrow_back</i>
+            <span class="mdl-button__ripple-container">
+                <span class="mdl-ripple"></span>
             </span>
-        </div>
+        </a>
     </div>
-</div>
+    -->
 
-            
-            
+
+    <!-- Left aligned menu below button -->
+    
+    
+    <button id="post-toc-trigger-btn"
+        class="mdl-button mdl-js-button mdl-button--icon">
+        <i class="material-icons">format_list_numbered</i>
+    </button>
+
+    <ul class="post-toc-wrap mdl-menu mdl-menu--bottom-left mdl-js-menu mdl-js-ripple-effect" for="post-toc-trigger-btn" style="max-height:80vh; overflow-y:scroll;">
+        <ol class="post-toc"><li class="post-toc-item post-toc-level-3"><a class="post-toc-link" href="#JUC"><span class="post-toc-number">1.</span> <span class="post-toc-text">JUC</span></a><ol class="post-toc-child"><li class="post-toc-item post-toc-level-4"><a class="post-toc-link" href="#并发"><span class="post-toc-number">1.1.</span> <span class="post-toc-text">并发</span></a><ol class="post-toc-child"><li class="post-toc-item post-toc-level-5"><a class="post-toc-link" href="#多线程"><span class="post-toc-number">1.1.1.</span> <span class="post-toc-text">多线程</span></a></li><li class="post-toc-item post-toc-level-5"><a class="post-toc-link" href="#锁"><span class="post-toc-number">1.1.2.</span> <span class="post-toc-text">锁</span></a><ol class="post-toc-child"><li class="post-toc-item post-toc-level-6"><a class="post-toc-link" href="#synchronized"><span class="post-toc-number">1.1.2.1.</span> <span class="post-toc-text">synchronized</span></a></li><li class="post-toc-item post-toc-level-6"><a class="post-toc-link" href="#Lock"><span class="post-toc-number">1.1.2.2.</span> <span class="post-toc-text">Lock</span></a></li><li class="post-toc-item post-toc-level-6"><a class="post-toc-link" href="#生产者消费者"><span class="post-toc-number">1.1.2.3.</span> <span class="post-toc-text">生产者消费者</span></a></li></ol></li><li class="post-toc-item post-toc-level-5"><a class="post-toc-link" href="#CountDownLatch"><span class="post-toc-number">1.1.3.</span> <span class="post-toc-text">CountDownLatch</span></a></li></ol></li></ol></li></ol>
+    </ul>
+    
+
+
+
+
+<!-- Layouts -->
+
+    <!-- Post Module -->
+    <div class="material-post_container">
+
+        <div class="material-post mdl-grid">
+            <div class="mdl-card mdl-shadow--4dp mdl-cell mdl-cell--12-col">
+
+                <!-- Post Header(Thumbnail & Title) -->
+                
+    <!-- Paradox Post Header -->
+    
         
-    
+            <!-- Random Thumbnail -->
+            <div class="post_thumbnail-random mdl-card__media mdl-color-text--grey-50">
+            <script type="text/ls-javascript" id="post-thumbnail-script">
+    var randomNum = Math.floor(Math.random() * 19 + 1);
 
-    
-
-    
-        <script type="text/ls-javascript" id="thumbnail-script">
-    var randomNum;
-
-    var locatePost = $('.locate-thumbnail-symbol').next();
-    for(var i = 0; i < 10; i++) {
-        randomNum = Math.floor(Math.random() * 19 + 1);
-
-        locatePost.children('.post_thumbnail-random').attr('id', 'random_thumbnail-'+randomNum);
-        locatePost.children('.post_thumbnail-random').attr('data-original', '/img/random/material-' + randomNum + '.png');
+    $('.post_thumbnail-random').attr('data-original', '/img/random/material-' + randomNum + '.png');
     $('.post_thumbnail-random').addClass('lazy');
-
-        locatePost = locatePost.next();
-    }
 </script>
 
+        
+    
+            <p class="article-headline-p">
+                JUC(一)
+            </p>
+        </div>
+
+
+
+
+
+                
+                    <!-- Paradox Post Info -->
+                    <div class="mdl-color-text--grey-700 mdl-card__supporting-text meta">
+
+    <!-- Author Avatar -->
+    <div id="author-avatar">
+        <img src="/img/avatar.png" width="44px" height="44px" alt="Author Avatar"/>
+    </div>
+    <!-- Author Name & Date -->
+    <div>
+        <strong>yy</strong>
+        <span>12月 13, 2020</span>
+    </div>
+
+    <div class="section-spacer"></div>
+
+    <!-- Favorite -->
+    <!--
+        <button id="article-functions-like-button" class="mdl-button mdl-js-button mdl-js-ripple-effect mdl-button--icon btn-like">
+            <i class="material-icons" role="presentation">favorite</i>
+            <span class="visuallyhidden">favorites</span>
+        </button>
+    -->
+
+    <!-- Qrcode -->
+    
+
+    <!-- Tags (bookmark) -->
+    
+    <button id="article-functions-viewtags-button" class="mdl-button mdl-js-button mdl-js-ripple-effect mdl-button--icon">
+        <i class="material-icons" role="presentation">bookmark</i>
+        <span class="visuallyhidden">bookmark</span>
+    </button>
+    <ul class="mdl-menu mdl-menu--bottom-right mdl-js-menu mdl-js-ripple-effect" for="article-functions-viewtags-button">
+        <li class="mdl-menu__item">
+        <a class="post_tag-link" href="/tags/java/" rel="tag">java</a>
+    </ul>
+    
+
+    <!-- Share -->
+    
+        <button id="article-fuctions-share-button" class="mdl-button mdl-js-button mdl-js-ripple-effect mdl-button--icon">
+    <i class="material-icons" role="presentation">share</i>
+    <span class="visuallyhidden">share</span>
+</button>
+<ul class="mdl-menu mdl-menu--bottom-right mdl-js-menu mdl-js-ripple-effect" for="article-fuctions-share-button">
+    
+
+    
+
+    <!-- Share Weibo -->
+    
+        <a class="post_share-link" href="http://service.weibo.com/share/share.php?appkey=&title=JUC(一)&url=http://yoursite.com/2020/12/13/JUC-%E4%B8%80/index.html&pic=http://yoursite.com/img/favicon.png&searchPic=false&style=simple" target="_blank">
+            <li class="mdl-menu__item">
+                分享到微博
+            </li>
+        </a>
+    
+
+    <!-- Share Twitter -->
+    
+        <a class="post_share-link" href="https://twitter.com/intent/tweet?text=JUC(一)&url=http://yoursite.com/2020/12/13/JUC-%E4%B8%80/index.html&via=yy" target="_blank">
+            <li class="mdl-menu__item">
+                分享到 Twitter
+            </li>
+        </a>
+    
+
+    <!-- Share Facebook -->
+    
+        <a class="post_share-link" href="https://www.facebook.com/sharer/sharer.php?u=http://yoursite.com/2020/12/13/JUC-%E4%B8%80/index.html" target="_blank">
+            <li class="mdl-menu__item">
+                分享到 Facebook
+            </li>
+        </a>
+    
+
+    <!-- Share Google+ -->
+    
+
+    <!-- Share LinkedIn -->
+    
+
+    <!-- Share QQ -->
+    
+
+    <!-- Share Telegram -->
+    
+</ul>
+
     
 </div>
+
+                
+
+                <!-- Post Content -->
+                <div id="post-content" class="mdl-color-text--grey-700 mdl-card__supporting-text fade out">
+    
+        <h3 id="JUC"><a href="#JUC" class="headerlink" title="JUC"></a>JUC</h3><p>之前都是在并发条件下线程不安全的集合，因此 我们就需要使用到锁以及一些保护措施来控制线程的执行， JDK  <code>java.util.concurrent</code> 包（JUC）中 为我们提供了丰富的并发控制组件，来满足我们的需求</p>
+<h4 id="并发"><a href="#并发" class="headerlink" title="并发"></a>并发</h4><blockquote>
+<p>充分利用CPU的资源</p>
+</blockquote>
+<h5 id="多线程"><a href="#多线程" class="headerlink" title="多线程"></a>多线程</h5><p>多线程下如何保证资源的安全性？</p>
+<pre><code class="java">// 资源
+class Ticket{
+    private int count = 50;
+    public void sell(){
+        if(count &gt; 0) {
+            System.out.println(Thread.currentThread().getName() + &quot;卖了第&quot; + (count--) + &quot;张票&quot;);
+        }
+    }
+}
+
+// 多线程操作同一资源
+Ticket ticket = new Ticket();
+new Thread(() -&gt; {ticket.sell();},&quot;线程0&quot;).start();
+new Thread(() -&gt; {ticket.sell();},&quot;线程1&quot;).start();
+new Thread(() -&gt; {ticket.sell();},&quot;线程2&quot;).start();</code></pre>
+<pre><code class="txt"># 结果
+线程1卖了第25张票
+线程1卖了第24张票
+线程0卖了第41张票
+线程0卖了第23张票
+线程0卖了第22张票</code></pre>
+<p>可以看到该结果是不安全的，因此需要加锁</p>
+<h5 id="锁"><a href="#锁" class="headerlink" title="锁"></a>锁</h5><h6 id="synchronized"><a href="#synchronized" class="headerlink" title="synchronized"></a>synchronized</h6><pre><code class="java">public synchronized void sell(){
+        if(count &gt; 0) {
+            System.out.println(Thread.currentThread().getName() + &quot;卖了第&quot; + (count--) + &quot;张票&quot;);
+        }
+    }</code></pre>
+<h6 id="Lock"><a href="#Lock" class="headerlink" title="Lock"></a>Lock</h6><pre><code class="java">public void sell(){
+        Lock lock = new ReentrantLock();
+        // 上锁
+        lock.lock();
+        try {
+            if(count &gt; 0) {
+                System.out.println(Thread.currentThread().getName() + &quot;卖了第&quot; + (count--) + &quot;张票&quot;);
+            }
+        } finally {
+            lock.unlock();
+        }
+    }</code></pre>
+<p><strong>两者之间的区别</strong></p>
+<ol>
+<li>Synchronized是关键字，内置语言实现，Lock是接口 </li>
+<li>Synchronized在线程发生异常时会自动释放锁，因此不会发生异常死锁。Lock异常时不会自动释放锁，所以需要在finally中实现释放锁。</li>
+<li>Lock是可以中断锁，Synchronized是非中断锁，必须等待线程执行完成释放锁。</li>
+</ol>
+<h6 id="生产者消费者"><a href="#生产者消费者" class="headerlink" title="生产者消费者"></a>生产者消费者</h6><p><strong>synchronized</strong></p>
+<pre><code class="java">// synchronized
+class Product{
+    private int num = 0;
+    public synchronized void produce() {
+        if(num &gt; 0){
+            // 等待
+               this.wait();
+        }
+        // 生产产品
+        System.out.println(Thread.currentThread().getName() + &quot; =&gt; &quot; + (++num);
+        // 唤醒
+        this.notifyAll();
+    }
+
+    public synchronized void consumer() {
+        if(num &lt;= 0){
+            this.wait();
+        }
+        System.out.println(Thread.currentThread().getName() + &quot; =&gt; &quot; + (--num);
+        this.notifyAll();
+    }
+}</code></pre>
+<pre><code class="txt">P1 =&gt; 8
+P2 =&gt; 9
+P1 =&gt; 10
+P2 =&gt; 11
+P1 =&gt; 12
+P2 =&gt; 13
+P1 =&gt; 14
+C2 =&gt; 13</code></pre>
+<p><img src="/img/synchronized.png" alt="synchronized"></p>
+<pre><code class="java">class Product{
+    private int num = 0;
+    public synchronized void produce() {
+        while(num &gt; 0){
+            // 等待
+            try {
+                this.wait();
+            } catch (InterruptedException e) {
+                e.printStackTrace();
+            }
+        }
+        // 生产产品
+        num++;
+        System.out.println(Thread.currentThread().getName() + &quot; =&gt; &quot; + num);
+        // 唤醒
+        this.notifyAll();
+    }
+
+    public synchronized void consumer() {
+        while(num &lt;= 0){
+            try {
+                this.wait();
+            } catch (InterruptedException e) {
+                e.printStackTrace();
+            }
+        }
+        num--;
+        System.out.println(Thread.currentThread().getName() + &quot; =&gt; &quot; + num);
+        this.notifyAll();
+    }
+}</code></pre>
+<p><strong>Lock</strong></p>
+<pre><code class="java">class Product2{
+
+    private int num = 0;
+    private Lock lock = new ReentrantLock();
+    private Condition condition = lock.newCondition();
+
+    public void produce() {
+        lock.lock();
+        try {
+            while (num &gt; 0) {
+                // 等待
+                condition.await();
+            }
+            // 生产产品
+            System.out.println(Thread.currentThread().getName() + &quot; =&gt; &quot; + (++num));
+            // 唤醒
+            condition.signalAll();
+        }catch (Exception e){
+
+        } finally {
+            lock.unlock();
+        }
+    }
+
+    public void consumer() {
+        lock.lock();
+        try {
+            while (num &lt;= 0) {
+                condition.await();
+            }
+            System.out.println(Thread.currentThread().getName() + &quot; =&gt; &quot; + (--num));
+            condition.signalAll();
+        }catch (Exception e){
+
+        } finally {
+            lock.unlock();
+        }
+    }
+}</code></pre>
+<h5 id="CountDownLatch"><a href="#CountDownLatch" class="headerlink" title="CountDownLatch"></a>CountDownLatch</h5><blockquote>
+<p>CountDownLatch是一个同步工具类，用来协调多个线程之间的同步，或者说起到线程之间的通信（而不是用作互斥的作用） </p>
+</blockquote>
+<pre><code class="java">// 声明
+CountDownLatch countDownLatch = new CountDownLatch(2);
+
+// 创建两个线程
+for(int i = 1; i &lt; 2; i++) {
+    final int temp = i;
+    new Thread(() -&gt; {
+        System.out.println(temp+&quot;线程执行开始&quot;);
+        try {
+            TimeUnit.SECONDS.sleep(3);
+        } catch (InterruptedException e) {
+            e.printStackTrace();
+        }
+        System.out.println(temp+&quot;线程执行结束&quot;);
+        countDownLatch.countDown();
+    },String.valueOf(temp)).start();
+}
+
+// 另外一个线程
+System.out.println(&quot;主线程等待。。。。&quot;);
+countDownLatch.await(); // await就会等待countDownLatch为零的时候
+System.out.println(&quot;主线程结束等待。。。。&quot;);</code></pre>
+<p><strong>用法</strong></p>
+<p>某一线程在开始运行前等待n个线程执行完毕。将CountDownLatch的计数器初始化为n，每当一个任务线程执行 countdownLatch.countDown()完毕，就将计数器减1，当计数器的值变为0时，在CountDownLatch上await()的线程就会被唤醒。一个典型应用场景就是启动一个服务时，主线程需要等待多个组件加载完毕，之后再继续执行 </p>
+
+        
+    
+
+    
+</div>
+
+
+                
+
+                <!-- Post Comments -->
+                
+                    
+                
+            </div>
+
+            <!-- Post Prev & Next Nav -->
+            <nav class="material-nav mdl-color-text--grey-50 mdl-cell mdl-cell--12-col">
+    <!-- Prev Nav -->
+    
+
+    <!-- Section Spacer -->
+    <div class="section-spacer"></div>
+
+    <!-- Next Nav -->
+    
+        <a href="/2020/12/13/%E9%AB%98%E6%95%88%E7%BC%96%E7%A8%8B/" id="post_nav-older" class="next-content">
+            旧篇
+            &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+            <button class="mdl-button mdl-js-button mdl-js-ripple-effect mdl-button--icon mdl-color--white mdl-color-text--grey-900" role="presentation">
+                <i class="material-icons">arrow_forward</i>
+            </button>
+        </a>
+    
+</nav>
+
+        </div>
+    </div>
+
 
 
                     
@@ -512,6 +846,14 @@ It will not impact the appearance and can give developers a lot of support :)
 </aside>
 
                     
+
+                    
+                        <!-- Footer Top Button -->
+                        <div id="back-to-top" class="toTop-wrap">
+    <a href="#top" class="toTop">
+        <i class="material-icons footer_top-i">expand_less</i>
+    </a>
+</div>
 
                     
 
