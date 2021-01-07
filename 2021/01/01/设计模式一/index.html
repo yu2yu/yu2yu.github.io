@@ -46,7 +46,7 @@
     
     <title>
         
-            标签: algorithm | 
+            设计模式一 | 
         
         YY&#39;s blog
     </title>
@@ -57,7 +57,7 @@
 
     <meta name="format-detection" content="telephone=no"/>
     <meta name="description" itemprop="description" content="">
-    <meta name="keywords" content="">
+    <meta name="keywords" content=",design">
     <meta name="theme-color" content="#0097A7">
 
     <!-- Disable Fucking Bloody Baidu Tranformation -->
@@ -213,7 +213,7 @@
     <!-- WebAPP Icons -->
     <meta name="mobile-web-app-capable" content="yes">
     <meta name="application-name" content="YY&#39;s blog">
-    <meta name="msapplication-starturl" content="http://yoursite.com/tags/algorithm/">
+    <meta name="msapplication-starturl" content="http://yoursite.com/2021/01/01/%E8%AE%BE%E8%AE%A1%E6%A8%A1%E5%BC%8F%E4%B8%80/">
     <meta name="msapplication-navbutton-color" content="#0097A7">
     <meta name="apple-mobile-web-app-capable" content="yes">
     <meta name="apple-mobile-web-app-title" content="YY&#39;s blog">
@@ -228,13 +228,16 @@
     
 
     <!-- The Open Graph protocol -->
-    <meta property="og:url" content="http://yoursite.com/tags/algorithm/">
+    <meta property="og:url" content="http://yoursite.com/2021/01/01/%E8%AE%BE%E8%AE%A1%E6%A8%A1%E5%BC%8F%E4%B8%80/">
     <meta property="og:type" content="blog">
-    <meta property="og:title" content="标签: algorithm | YY&#39;s blog">
+    <meta property="og:title" content="设计模式一 | YY&#39;s blog">
     <meta property="og:image" content="/img/favicon.png">
     <meta property="og:description" content="">
-    
+    <meta property="og:article:tag" content="design"> 
 
+    
+        <meta property="article:published_time" content="Fri Jan 01 2021 15:19:38 GMT+0800">
+        <meta property="article:modified_time" content="Thu Jan 07 2021 15:23:03 GMT+0800">
     
 
     <!-- The Twitter Card protocol -->
@@ -242,13 +245,43 @@
 
     <!-- Add canonical link for SEO -->
     
-        <link rel="canonical" href="http://yoursite.com/tags/algorithm/index.html" />
+        <link rel="canonical" href="http://yoursite.com/2021/01/01/%E8%AE%BE%E8%AE%A1%E6%A8%A1%E5%BC%8F%E4%B8%80/index.html" />
     
 
     <!-- Structured-data for SEO -->
     
         
 
+
+<script type="application/ld+json">
+{
+    "@context": "https://schema.org",
+    "@type": "BlogPosting",
+    "mainEntityOfPage": "http://yoursite.com/2021/01/01/%E8%AE%BE%E8%AE%A1%E6%A8%A1%E5%BC%8F%E4%B8%80/index.html",
+    "headline": "设计模式一",
+    "datePublished": "Fri Jan 01 2021 15:19:38 GMT+0800",
+    "dateModified": "Thu Jan 07 2021 15:23:03 GMT+0800",
+    "author": {
+        "@type": "Person",
+        "name": "yy",
+        "image": {
+            "@type": "ImageObject",
+            "url": "/img/avatar.png"
+        },
+        "description": "笑笑笑起来了"
+    },
+    "publisher": {
+        "@type": "Organization",
+        "name": "YY&#39;s blog",
+        "logo": {
+            "@type":"ImageObject",
+            "url": "/img/favicon.png"
+        }
+    },
+    "keywords": ",design",
+    "description": "",
+}
+</script>
 
 
     
@@ -282,145 +315,345 @@
                         </button>
                     
 
-                    <!-- Index Module -->
-<div class="material-index mdl-grid">
-    
-    <div class="locate-thumbnail-symbol"></div>
+                    <!-- Post TOC -->
 
-    <!-- Pin on top -->
+    
+    <!-- Back Button -->
+    <!--
+    <div class="material-back" id="backhome-div" tabindex="0">
+        <a class="mdl-button mdl-js-button mdl-js-ripple-effect mdl-button--icon"
+           href="#" onclick="window.history.back();return false;"
+           target="_self"
+           role="button"
+           data-upgraded=",MaterialButton,MaterialRipple">
+            <i class="material-icons" role="presentation">arrow_back</i>
+            <span class="mdl-button__ripple-container">
+                <span class="mdl-ripple"></span>
+            </span>
+        </a>
+    </div>
+    -->
+
+
+    <!-- Left aligned menu below button -->
+    
+    
+    <button id="post-toc-trigger-btn"
+        class="mdl-button mdl-js-button mdl-button--icon">
+        <i class="material-icons">format_list_numbered</i>
+    </button>
+
+    <ul class="post-toc-wrap mdl-menu mdl-menu--bottom-left mdl-js-menu mdl-js-ripple-effect" for="post-toc-trigger-btn" style="max-height:80vh; overflow-y:scroll;">
+        <ol class="post-toc"><li class="post-toc-item post-toc-level-2"><a class="post-toc-link" href="#设计模式"><span class="post-toc-number">1.</span> <span class="post-toc-text">设计模式</span></a><ol class="post-toc-child"><li class="post-toc-item post-toc-level-3"><a class="post-toc-link" href="#设计原则"><span class="post-toc-number">1.1.</span> <span class="post-toc-text">设计原则</span></a><ol class="post-toc-child"><li class="post-toc-item post-toc-level-4"><a class="post-toc-link" href="#1-单一职责原则"><span class="post-toc-number">1.1.1.</span> <span class="post-toc-text">1. 单一职责原则</span></a><ol class="post-toc-child"><li class="post-toc-item post-toc-level-5"><a class="post-toc-link" href="#场景示例"><span class="post-toc-number">1.1.1.1.</span> <span class="post-toc-text">场景示例</span></a></li></ol></li></ol></li><li class="post-toc-item post-toc-level-3"><a class="post-toc-link" href="#创建型模式"><span class="post-toc-number">1.2.</span> <span class="post-toc-text">创建型模式</span></a><ol class="post-toc-child"><li class="post-toc-item post-toc-level-4"><a class="post-toc-link" href="#单例模式"><span class="post-toc-number">1.2.1.</span> <span class="post-toc-text">单例模式</span></a><ol class="post-toc-child"><li class="post-toc-item post-toc-level-5"><a class="post-toc-link" href="#应用场景"><span class="post-toc-number">1.2.1.1.</span> <span class="post-toc-text">应用场景</span></a></li><li class="post-toc-item post-toc-level-5"><a class="post-toc-link" href="#创建方式"><span class="post-toc-number">1.2.1.2.</span> <span class="post-toc-text">创建方式</span></a></li></ol></li><li class="post-toc-item post-toc-level-4"><a class="post-toc-link" href="#原型模式"><span class="post-toc-number">1.2.2.</span> <span class="post-toc-text">原型模式</span></a><ol class="post-toc-child"><li class="post-toc-item post-toc-level-5"><a class="post-toc-link" href="#应用场景-1"><span class="post-toc-number">1.2.2.1.</span> <span class="post-toc-text">应用场景</span></a></li><li class="post-toc-item post-toc-level-5"><a class="post-toc-link" href="#创建方式-1"><span class="post-toc-number">1.2.2.2.</span> <span class="post-toc-text">创建方式</span></a></li></ol></li><li class="post-toc-item post-toc-level-4"><a class="post-toc-link" href="#工厂模式"><span class="post-toc-number">1.2.3.</span> <span class="post-toc-text">工厂模式</span></a></li></ol></li></ol></li></ol>
+    </ul>
     
 
-    <!-- Normal Post -->
-    
-        
-            
-                <!-- Paradox Thumbnail -->
-                <div class="post_entry-module mdl-card mdl-shadow--2dp mdl-cell mdl-cell--12-col fade out">
-    <!-- Post Thumbnail -->
+
+
+
+<!-- Layouts -->
+
+    <!-- Post Module -->
+    <div class="material-post_container">
+
+        <div class="material-post mdl-grid">
+            <div class="mdl-card mdl-shadow--4dp mdl-cell mdl-cell--12-col">
+
+                <!-- Post Header(Thumbnail & Title) -->
+                
+    <!-- Paradox Post Header -->
     
         <!-- Custom Thumbnail -->
-        <div class="post_thumbnail-custom mdl-card__media mdl-color-text--grey-50 lazy" data-original="../img/algorithm.jpg">
+        <div class="post_thumbnail-custom mdl-card__media mdl-color-text--grey-50" style="background-image:url(../img/algorithm.jpg)">
+    
+            <p class="article-headline-p">
+                设计模式一
+            </p>
+        </div>
+
+
+
+
+
+                
+                    <!-- Paradox Post Info -->
+                    <div class="mdl-color-text--grey-700 mdl-card__supporting-text meta">
+
+    <!-- Author Avatar -->
+    <div id="author-avatar">
+        <img src="/img/avatar.png" width="44px" height="44px" alt="Author Avatar"/>
+    </div>
+    <!-- Author Name & Date -->
+    <div>
+        <strong>yy</strong>
+        <span>1月 01, 2021</span>
+    </div>
+
+    <div class="section-spacer"></div>
+
+    <!-- Favorite -->
+    <!--
+        <button id="article-functions-like-button" class="mdl-button mdl-js-button mdl-js-ripple-effect mdl-button--icon btn-like">
+            <i class="material-icons" role="presentation">favorite</i>
+            <span class="visuallyhidden">favorites</span>
+        </button>
+    -->
+
+    <!-- Qrcode -->
     
 
-        <!-- Post Title -->
-        <p class="article-headline-p"><a href="/2021/01/07/%E7%AE%97%E6%B3%95%E4%BA%8C/">算法二</a></p>
-    </div>
+    <!-- Tags (bookmark) -->
+    
+    <button id="article-functions-viewtags-button" class="mdl-button mdl-js-button mdl-js-ripple-effect mdl-button--icon">
+        <i class="material-icons" role="presentation">bookmark</i>
+        <span class="visuallyhidden">bookmark</span>
+    </button>
+    <ul class="mdl-menu mdl-menu--bottom-right mdl-js-menu mdl-js-ripple-effect" for="article-functions-viewtags-button">
+        <li class="mdl-menu__item">
+        <a class="post_tag-link" href="/tags/design/" rel="tag">design</a>
+    </ul>
+    
 
-    <!-- Post Excerpt -->
-    <div class="mdl-color-text--grey-600 mdl-card__supporting-text post_entry-content">
-        
-            数组
-        
-        &nbsp;&nbsp;&nbsp;
-        <span>
-            <a href="/2021/01/07/%E7%AE%97%E6%B3%95%E4%BA%8C/" target="_self">阅读全文</a>
-        </span>
-    </div>
-    <!-- Post_entry Info-->
-    <div id="post_entry-info">
-        <div id="post_entry-left-info" class="mdl-card__supporting-text meta mdl-color-text--grey-600 ">
-            <!-- Author Avatar -->
-            <div id="author-avatar">
-                <img src="/img/avatar.png" width="44px" height="44px" alt="yy's avatar">
-            </div>
-            <div>
-                <strong>yy</strong>
-                <span>1月 07, 2021</span>
-            </div>
-        </div>
-        <div id="post_entry-right-info">
-          
+    <!-- Share -->
+    
+        <button id="article-fuctions-share-button" class="mdl-button mdl-js-button mdl-js-ripple-effect mdl-button--icon">
+    <i class="material-icons" role="presentation">share</i>
+    <span class="visuallyhidden">share</span>
+</button>
+<ul class="mdl-menu mdl-menu--bottom-right mdl-js-menu mdl-js-ripple-effect" for="article-fuctions-share-button">
+    
 
-            
+    
 
-            
+    <!-- Share Weibo -->
+    
+        <a class="post_share-link" href="http://service.weibo.com/share/share.php?appkey=&title=设计模式一&url=http://yoursite.com/2021/01/01/%E8%AE%BE%E8%AE%A1%E6%A8%A1%E5%BC%8F%E4%B8%80/index.html&pic=http://yoursite.com/img/favicon.png&searchPic=false&style=simple" target="_blank">
+            <li class="mdl-menu__item">
+                分享到微博
+            </li>
+        </a>
+    
 
-            <!-- Post Views -->
-            <span class="post_entry-views">
-            </span>
-        </div>
-    </div>
+    <!-- Share Twitter -->
+    
+        <a class="post_share-link" href="https://twitter.com/intent/tweet?text=设计模式一&url=http://yoursite.com/2021/01/01/%E8%AE%BE%E8%AE%A1%E6%A8%A1%E5%BC%8F%E4%B8%80/index.html&via=yy" target="_blank">
+            <li class="mdl-menu__item">
+                分享到 Twitter
+            </li>
+        </a>
+    
+
+    <!-- Share Facebook -->
+    
+        <a class="post_share-link" href="https://www.facebook.com/sharer/sharer.php?u=http://yoursite.com/2021/01/01/%E8%AE%BE%E8%AE%A1%E6%A8%A1%E5%BC%8F%E4%B8%80/index.html" target="_blank">
+            <li class="mdl-menu__item">
+                分享到 Facebook
+            </li>
+        </a>
+    
+
+    <!-- Share Google+ -->
+    
+
+    <!-- Share LinkedIn -->
+    
+
+    <!-- Share QQ -->
+    
+
+    <!-- Share Telegram -->
+    
+</ul>
+
+    
 </div>
 
-            
-            
-        
+                
+
+                <!-- Post Content -->
+                <div id="post-content" class="mdl-color-text--grey-700 mdl-card__supporting-text fade out">
     
-        
-            
-                <!-- Paradox Thumbnail -->
-                <div class="post_entry-module mdl-card mdl-shadow--2dp mdl-cell mdl-cell--12-col fade out">
-    <!-- Post Thumbnail -->
-    
-        <!-- Custom Thumbnail -->
-        <div class="post_thumbnail-custom mdl-card__media mdl-color-text--grey-50 lazy" data-original="../img/algorithm.jpg">
-    
+        <h2 id="设计模式"><a href="#设计模式" class="headerlink" title="设计模式"></a>设计模式</h2><h3 id="设计原则"><a href="#设计原则" class="headerlink" title="设计原则"></a>设计原则</h3><h4 id="1-单一职责原则"><a href="#1-单一职责原则" class="headerlink" title="1. 单一职责原则"></a>1. 单一职责原则</h4><blockquote>
+<p> 单一职责原则规定一个类应该有且仅有一个引起它变化的原因，否则类应该被拆分</p>
+</blockquote>
+<h5 id="场景示例"><a href="#场景示例" class="headerlink" title="场景示例"></a><a href="'https://zhuanlan.zhihu.com/p/24198903'">场景示例</a></h5><ul>
+<li><strong>创建型模式</strong></li>
+</ul>
+<p>怎么创建对象， 它的主要特点是“将对象的创建与使用分离”。单例、原型、工厂方法、抽象工厂、建造者等 5 种创建型模式 </p>
+<ul>
+<li><p><strong>结构型模式</strong></p>
+<p>如何将类或对象按某种布局组成更大的结构，并同时保持结构的灵活和高效。 代理、适配器、桥接、装饰、外观、享元、组合等 7 种结构型模式 </p>
+</li>
+</ul>
+<ul>
+<li><p><strong>行为型模式</strong></p>
+<p>类或对象之间怎样相互协作共同完成单个对象都无法单独完成的任务。 模板方法、策略、命令、职责链、状态、观察者、中介者、迭代器、访问者、备忘录、解释器等 11 种行为型模式 </p>
+</li>
+</ul>
+<table>
+<thead>
+<tr>
+<th>范围\目的</th>
+<th>创建型模式</th>
+<th>结构型模式</th>
+<th><strong>行为型模式</strong></th>
+</tr>
+</thead>
+<tbody><tr>
+<td>类模式</td>
+<td>工厂方法</td>
+<td>(类）适配器</td>
+<td>模板方法、解释器</td>
+</tr>
+<tr>
+<td>对象模式</td>
+<td>单例 原型 抽象工厂 建造者</td>
+<td>代理 (对象）适配器 桥接 装饰 外观 享元 组合</td>
+<td>策略 命令 职责链 状态 观察者 中介者 迭代器 访问者 备忘录</td>
+</tr>
+</tbody></table>
+<h3 id="创建型模式"><a href="#创建型模式" class="headerlink" title="创建型模式"></a>创建型模式</h3><h4 id="单例模式"><a href="#单例模式" class="headerlink" title="单例模式"></a>单例模式</h4><blockquote>
+<p> 一个类只有一个实例，且该类能自行创建这个实例的一种模式</p>
+</blockquote>
+<h5 id="应用场景"><a href="#应用场景" class="headerlink" title="应用场景"></a>应用场景</h5><p>对于<code>java</code>来说，单例模式可以保证在一个<code>JVM</code>只存在单一实例</p>
+<ul>
+<li>需要频繁创建的类，减少GC的压力</li>
+<li>创建类消耗的内存过大，避免频繁创建</li>
+<li>频繁创建频繁摧毁的类，类似线程池以及连接池</li>
+</ul>
+<h5 id="创建方式"><a href="#创建方式" class="headerlink" title="创建方式"></a>创建方式</h5><ul>
+<li><strong>懒汉式</strong></li>
+</ul>
+<pre><code class="java">public class HungrySingleton {
 
-        <!-- Post Title -->
-        <p class="article-headline-p"><a href="/2020/07/08/%E7%AE%97%E6%B3%95-%E4%B8%80/">算法(一)</a></p>
-    </div>
+    private static HungrySingleton singleton = null;
 
-    <!-- Post Excerpt -->
-    <div class="mdl-color-text--grey-600 mdl-card__supporting-text post_entry-content">
-        
-            数据结构
-        
-        &nbsp;&nbsp;&nbsp;
-        <span>
-            <a href="/2020/07/08/%E7%AE%97%E6%B3%95-%E4%B8%80/" target="_self">阅读全文</a>
-        </span>
-    </div>
-    <!-- Post_entry Info-->
-    <div id="post_entry-info">
-        <div id="post_entry-left-info" class="mdl-card__supporting-text meta mdl-color-text--grey-600 ">
-            <!-- Author Avatar -->
-            <div id="author-avatar">
-                <img src="/img/avatar.png" width="44px" height="44px" alt="yy's avatar">
-            </div>
-            <div>
-                <strong>yy</strong>
-                <span>7月 08, 2020</span>
-            </div>
-        </div>
-        <div id="post_entry-right-info">
-          
-
-            
-
-            
-
-            <!-- Post Views -->
-            <span class="post_entry-views">
-            </span>
-        </div>
-    </div>
-</div>
-
-            
-            
-        
-    
-
-    
-
-    
-        <script type="text/ls-javascript" id="thumbnail-script">
-    var randomNum;
-
-    var locatePost = $('.locate-thumbnail-symbol').next();
-    for(var i = 0; i < 10; i++) {
-        randomNum = Math.floor(Math.random() * 19 + 1);
-
-        locatePost.children('.post_thumbnail-random').attr('id', 'random_thumbnail-'+randomNum);
-        locatePost.children('.post_thumbnail-random').attr('data-original', '/img/random/material-' + randomNum + '.png');
-    $('.post_thumbnail-random').addClass('lazy');
-
-        locatePost = locatePost.next();
+    // 私有性，以防创建
+    private HungrySingleton(){
     }
-</script>
+
+    public static HungrySingleton getInstance(){
+        if(singleton == null){
+            singleton = new HungrySingleton();
+        }
+        return singleton;
+    }
+}</code></pre>
+<pre><code class="java">    @Test
+    public void testSingleton() throws InterruptedException {
+
+        // 多线程创建
+        for (int i = 0; i &lt; 5; i++) {
+            new Thread(() -&gt; {
+                HungrySingleton instance1 = HungrySingleton.getInstance();
+                System.out.println(Thread.currentThread().getName() + &quot;:&quot; + instance1);
+            },String.valueOf(i)).start();
+        }
+
+        TimeUnit.SECONDS.sleep(3);
+        System.out.println(&quot;final&quot;);
+
+    }    </code></pre>
+<p><img src="E:%5Cmy%5Cblog%5Cimages%5Cpattern%5ChungerSingle-1.png" alt="image-20210105154538815"></p>
+<p><strong>可以看到该创建方式是线程不安全的，在多线程的情况下，创建了多个实例</strong></p>
+<pre><code class="java">// 防止指令重排
+private static volatile HungrySingletonSynchronized singleton = null;
+
+public static HungrySingletonSynchronized getInstance(){
+    if(singleton == null){
+        // 加锁
+        synchronized (HungrySingletonSynchronized.class) {
+            if(singleton == null) {
+                singleton = new HungrySingletonSynchronized();
+            }
+        }
+    }
+    return singleton;
+}</code></pre>
+<ul>
+<li><strong>饱汉式</strong></li>
+</ul>
+<pre><code class="java">public class FullSingleton {
+
+    private static final FullSingleton singleton = new FullSingleton();
+
+    private FullSingleton(){
+
+    }
+
+    public static FullSingleton getInstance(){
+        return singleton;
+    }
+
+}</code></pre>
+<h4 id="原型模式"><a href="#原型模式" class="headerlink" title="原型模式"></a>原型模式</h4><blockquote>
+<p> 用一个已经创建的实例作为原型，通过复制该原型对象来创建一个和原型相同或相似的新对象</p>
+</blockquote>
+<h5 id="应用场景-1"><a href="#应用场景-1" class="headerlink" title="应用场景"></a>应用场景</h5><p>原型模式通常适用于以下场景。</p>
+<ul>
+<li>对象之间相同或相似，即只是个别的几个属性不同的时候。</li>
+<li>创建对象成本较大，例如初始化时间长，占用CPU太多，或者占用网络资源太多等，需要优化资源。</li>
+<li>创建一个对象需要繁琐的数据准备或访问权限等，需要提高性能或者提高安全性。</li>
+<li>系统中大量使用该类对象，且各个调用者都需要给它的属性重新赋值。</li>
+</ul>
+<h5 id="创建方式-1"><a href="#创建方式-1" class="headerlink" title="创建方式"></a>创建方式</h5><pre><code class="java">// 实现cloneable接口
+public class Student implements Cloneable{
+
+    private String name;
+    private int age;
+
+    @Override
+    protected Object clone() throws CloneNotSupportedException {
+        return super.clone();
+    }
+}</code></pre>
+<h4 id="工厂模式"><a href="#工厂模式" class="headerlink" title="工厂模式"></a>工厂模式</h4>
+        
+    
 
     
 </div>
+
+
+                
+
+                <!-- Post Comments -->
+                
+                    
+                
+            </div>
+
+            <!-- Post Prev & Next Nav -->
+            <nav class="material-nav mdl-color-text--grey-50 mdl-cell mdl-cell--12-col">
+    <!-- Prev Nav -->
+    
+        <a href="/2021/01/07/%E7%AE%97%E6%B3%95%E4%BA%8C/" id="post_nav-newer" class="prev-content">
+            <button class="mdl-button mdl-js-button mdl-js-ripple-effect mdl-button--icon mdl-color--white mdl-color-text--grey-900" role="presentation">
+                <i class="material-icons">arrow_back</i>
+            </button>
+            &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+            新篇
+        </a>
+    
+
+    <!-- Section Spacer -->
+    <div class="section-spacer"></div>
+
+    <!-- Next Nav -->
+    
+        <a href="/2020/12/13/JUC-%E4%B8%80/" id="post_nav-older" class="next-content">
+            旧篇
+            &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+            <button class="mdl-button mdl-js-button mdl-js-ripple-effect mdl-button--icon mdl-color--white mdl-color-text--grey-900" role="presentation">
+                <i class="material-icons">arrow_forward</i>
+            </button>
+        </a>
+    
+</nav>
+
+        </div>
+    </div>
+
 
 
                     
@@ -566,6 +799,14 @@ It will not impact the appearance and can give developers a lot of support :)
 </aside>
 
                     
+
+                    
+                        <!-- Footer Top Button -->
+                        <div id="back-to-top" class="toTop-wrap">
+    <a href="#top" class="toTop">
+        <i class="material-icons footer_top-i">expand_less</i>
+    </a>
+</div>
 
                     
 
